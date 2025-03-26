@@ -1,0 +1,66 @@
+[project]
+name = "vaping"
+version = "1.5.4"
+description = "vaping in a Docker container image"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "confu==1.9.0",
+    "docutils==0.21.2",
+    "munge[tomlkit,yaml]==1.3.0",
+    "pid==3.0.4",
+    "pluginmgr==1.2.1",
+    "python-daemon==3.1.2",
+]
+
+[project.optional-dependencies]
+graphite = [
+    "graphyte==1.7.1",
+    "requests==2.32.3",
+]
+prometheus = [
+    "prometheus-client==0.21.1",
+]
+standalone = [
+    "flask==2.1.3",
+    "graphsrv==2.1.1",
+    "setuptools==78.1.0",
+    "vodka",
+    "werkzeug==2.1.0",
+]
+whisper = [
+    "whisper==1.1.10",
+]
+zeromq = [
+    "pyzmq==26.3.0",
+]
+
+[project.scripts]
+vaping = "vaping.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "coverage==7.7.1",
+    "ctl==1.2.0",
+    "jinja2==3.1.6",
+    "markdown-include==0.8.1",
+    "mkdocs==1.6.1",
+    "mypy==1.15.0",
+    "pre-commit==4.2.0",
+    "pymdgen==1.1.0",
+    "pytest==8.3.5",
+    "pytest-cov==6.0.0",
+    "pytest-filedata==1.0.0",
+    "pyupgrade==3.19.1",
+    "ruff==0.11.2",
+    "tmpl==1.1.0",
+    "tox==4.24.2",
+    "twine==6.1.0",
+]
+
+[tool.uv.sources]
+vodka = { git = "https://github.com/20c/vodka", branch = "master" }
