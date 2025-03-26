@@ -1,0 +1,20 @@
+---
+services:
+  docker-template-python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: docker-template-python
+    environment:
+      - "ENV="
+    image: docker-template-python
+    restart: unless-stopped
+    secrets:
+      - "SECRET="
+    volumes:
+      - type: volume
+        source: docker-template-python
+        target: /opt/docker-template-python/data
+volumes:
+  docker-template-python:
+    name: docker-template-python
