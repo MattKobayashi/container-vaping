@@ -1,0 +1,2 @@
+#!/bin/sh
+exec s6-setuidgid template-container-python uv run python3 -u /opt/template-container-python/main.py
