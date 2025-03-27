@@ -1,4 +1,4 @@
-FROM python:3.13.1-alpine3.19@sha256:8287ca207e905649e9f399b5f91a119e5e9051d8cd110d5f8c3b4bd9458ebd1d
+FROM python:3.13.2-alpine3.21@sha256:323a717dc4a010fee21e3f1aac738ee10bb485de4e7593ce242b36ee48d6b352
 ENV USERNAME=container-vaping
 ENV GROUPNAME=$USERNAME
 ENV UID=911
@@ -27,7 +27,7 @@ RUN apk --no-cache add \
 COPY --chmod=644 --chown=${UID}:${GID} config/config.yaml config.yaml
 COPY --chmod=644 --chown=${UID}:${GID} requirements.txt requirements.txt
 USER ${USERNAME}
-RUN pipx install https://github.com/20c/vaping/archive/4d5e0f182676bb7555cde8988230181be4d8d9c2.tar.gz \
+RUN pipx install https://github.com/MattKobayashi/vaping/archive/refs/heads/main.zip \
     && pipx inject --force --requirement requirements.txt vaping
 ENTRYPOINT ["vaping", "start", "--home=/opt/container-vaping", "--no-fork"]
 LABEL org.opencontainers.image.authors="MattKobayashi <matthew@kobayashi.au>"
