@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.4-patch2](https://github.com/MattKobayashi/container-vaping/compare/v1.5.4-patch1...v1.5.4-patch2) (2025-03-27)
+
+
+### Bug Fixes
+
+* Install vaping from fork ([#21](https://github.com/MattKobayashi/container-vaping/issues/21)) ([a261099](https://github.com/MattKobayashi/container-vaping/commit/a26109926845835823d30075a114047bdf2b88c8))
+
 ## [1.5.4-patch1](https://github.com/MattKobayashi/container-vaping/compare/v1.5.4-patch1...v1.5.4-patch1) (2025-03-27)
 
 
