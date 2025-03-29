@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.4-patch4](https://github.com/MattKobayashi/container-vaping/compare/v1.5.4-patch3...v1.5.4-patch4) (2025-03-29)
+
+
+### Features
+
+* Add entrypoint script for PID file cleanup on stop ([#26](https://github.com/MattKobayashi/container-vaping/issues/26)) ([0893bad](https://github.com/MattKobayashi/container-vaping/commit/0893bad60c77c9944f1e50f39285a3242a2da886))
+
 ## [1.5.4-patch3](https://github.com/MattKobayashi/container-vaping/compare/v1.5.4-patch2...v1.5.4-patch3) (2025-03-27)
 
 
