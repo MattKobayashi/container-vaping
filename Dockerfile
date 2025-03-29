@@ -24,10 +24,11 @@ RUN apk --no-cache add \
       --uid "$UID" \
       $USERNAME \
     && chown -R ${UID}:${GID} /opt/${USERNAME}
+COPY --chmod=755 --chown=${UID}:${GID} entrypoint.sh /usr/local/bin/entrypoint.sh
 COPY --chmod=644 --chown=${UID}:${GID} config/config.yaml config.yaml
 COPY --chmod=644 --chown=${UID}:${GID} requirements.txt requirements.txt
 USER ${USERNAME}
 RUN pipx install https://github.com/MattKobayashi/vaping/archive/refs/heads/main.zip \
     && pipx inject --force --requirement requirements.txt vaping
-ENTRYPOINT ["vaping", "start", "--home=/opt/container-vaping", "--no-fork"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 LABEL org.opencontainers.image.authors="MattKobayashi <matthew@kobayashi.au>"
