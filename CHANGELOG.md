@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.4-patch6](https://github.com/MattKobayashi/container-vaping/compare/v1.5.4-patch5...v1.5.4-patch6) (2025-04-20)
+
+
+### Miscellaneous Chores
+
+* **deps:** Bump publish.yaml to v1.0.3 ([#42](https://github.com/MattKobayashi/container-vaping/issues/42)) ([05cd59a](https://github.com/MattKobayashi/container-vaping/commit/05cd59a41166a0dd2e750015f05217eee4ec76b7))
+
 ## [1.5.4-patch5](https://github.com/MattKobayashi/container-vaping/compare/v1.5.4-patch4...v1.5.4-patch5) (2025-04-20)
 
 
