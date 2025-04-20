@@ -1,7 +1,7 @@
 ---
 env:
   REPO_NAME: mattkobayashi
-  IMAGE_NAME: container-vaping
+  IMAGE_NAME: vaping
 jobs:
   container:
     name: Container image
@@ -48,6 +48,7 @@ on:
     branches:
       - main
     paths:
+      - "**.sh"
       - "**.yaml"
       - "Dockerfile"
       - "requirements.txt"

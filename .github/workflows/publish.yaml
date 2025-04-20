@@ -2,7 +2,7 @@
 env:
   REGISTRY: ghcr.io
   REPO_NAME: mattkobayashi
-  IMAGE_NAME: container-vaping
+  IMAGE_NAME: vaping
 jobs:
   publish:
     name: Publish container image
