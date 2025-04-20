@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.4-patch5](https://github.com/MattKobayashi/container-vaping/compare/v1.5.4-patch4...v1.5.4-patch5) (2025-04-20)
+
+
+### Bug Fixes
+
+* Update all name instances to vaping ([#36](https://github.com/MattKobayashi/container-vaping/issues/36)) ([f525a3f](https://github.com/MattKobayashi/container-vaping/commit/f525a3f34d9418404ab6065d28f87e509385c544))
+
+
+### Miscellaneous Chores
+
+* Enable Release Please GitHub app ([#38](https://github.com/MattKobayashi/container-vaping/issues/38)) ([6ac4b12](https://github.com/MattKobayashi/container-vaping/commit/6ac4b12ab8790abd2a637e3c00cbdd89b8e0166f))
+* Enable Release Please GitHub app ([#39](https://github.com/MattKobayashi/container-vaping/issues/39)) ([a7c9a24](https://github.com/MattKobayashi/container-vaping/commit/a7c9a24d5824c28fa1afbb85e850286acfec266f))
+* Generate release PR ([#37](https://github.com/MattKobayashi/container-vaping/issues/37)) ([b5c1379](https://github.com/MattKobayashi/container-vaping/commit/b5c13791c16ac079f69c196e74127ab8303a9dc2))
+
 ## [1.5.4-patch4](https://github.com/MattKobayashi/container-vaping/compare/v1.5.4-patch3...v1.5.4-patch4) (2025-03-29)
 
 
