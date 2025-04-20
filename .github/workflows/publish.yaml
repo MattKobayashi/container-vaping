@@ -3,7 +3,7 @@ jobs:
   image:
     name: Image
     secrets: inherit
-    uses: MattKobayashi/actions-workflows/.github/workflows/publish.yaml@6d5381b1c1fe60d9610f099a5bcafd9ceab20782 # v1.0.2
+    uses: MattKobayashi/actions-workflows/.github/workflows/publish.yaml@27c3f610dca007cad9095926d1aef2cf89083421 # v1.0.3
     with:
       image-name: vaping
 name: Publish
