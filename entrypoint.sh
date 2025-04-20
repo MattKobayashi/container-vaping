@@ -3,7 +3,7 @@
 
 set -e
 
-PID_FILE="/opt/container-vaping/vaping.pid"
+PID_FILE="/opt/vaping/vaping.pid"
 
 # Cleanup function to remove the PID file
 cleanup() {
@@ -19,7 +19,7 @@ trap cleanup INT TERM QUIT
 # Start vaping in the background
 echo "Starting vaping..."
 # Note: Using the full path to vaping installed via pipx
-/opt/container-vaping/.local/bin/vaping start --home=/opt/container-vaping --no-fork &
+/opt/vaping/.local/bin/vaping start --home=/opt/vaping --no-fork &
 
 # Get the PID of the background vaping process
 VAPING_PID=$!

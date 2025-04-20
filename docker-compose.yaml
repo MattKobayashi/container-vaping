@@ -1,16 +1,16 @@
 ---
 services:
-  container-vaping:
+  vaping:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: container-vaping
-    image: container-vaping
+    container_name: vaping
+    image: vaping
     network_mode: host
     restart: unless-stopped
     secrets:
       - "SECRET="
     volumes:
       - source: config/config.yaml
-        target: /opt/container-vaping/config.yaml
+        target: /opt/vaping/config.yaml
         type: bind
