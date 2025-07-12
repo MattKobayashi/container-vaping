@@ -1,6 +1,6 @@
 confu==1.9.0
 docutils==0.21.2
-munge[tomlkit,yaml]==1.3.0
+munge[tomlkit,yaml]==1.4.0
 pid==3.0.4
 pluginmgr==1.2.1
 python-daemon==3.1.2
