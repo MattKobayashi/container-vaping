@@ -1,4 +1,20 @@
-FROM python:3.13.5-alpine@sha256:37b14db89f587f9eaa890e4a442a3fe55db452b69cca1403cc730bd0fbdc8aaf
+FROM alpine:3.22.1@sha256:4bcff63911fcb4448bd4fdacec207030997caf25e9bea4045fa6c8c44de311d1
+
+# renovate: datasource=repology depName=alpine_3_22/fping
+ENV FPING_VERSION="5.3-r0"
+# renovate: datasource=repology depName=alpine_3_22/librrd
+ENV LIBRRD_VERSION="1.9.0-r4"
+# renovate: datasource=repology depName=alpine_3_22/zeromq
+ENV ZEROMQ_VERSION="4.3.5-r2"
+# renovate: datasource=repology depName=alpine_3_22/pipx
+ENV PIPX_VERSION="1.7.1-r0"
+
+RUN apk --no-cache add \
+    fping="${FPING_VERSION}" \
+    librrd="${LIBRRD_VERSION}" \
+    zeromq="${ZEROMQ_VERSION}" \
+    pipx="${PIPX_VERSION}"
+
 ENV USERNAME=vaping
 ENV GROUPNAME=$USERNAME
 ENV UID=911
@@ -7,12 +23,7 @@ ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
 ENV USE_EMOJI=false
 # uv and project
 WORKDIR /opt/${USERNAME}
-RUN apk --no-cache add \
-      fping \
-      librrd \
-      zeromq \
-    && python3 -m pip install pipx \
-    && addgroup \
+RUN addgroup \
       --gid "$GID" \
       "$GROUPNAME" \
     && adduser \
