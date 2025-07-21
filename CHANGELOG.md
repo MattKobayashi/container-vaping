@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.4-patch7](https://github.com/MattKobayashi/container-vaping/compare/v1.5.4-patch6...v1.5.4-patch7) (2025-07-21)
+
+
+### Bug Fixes
+
+* **dockerfile:** use alpine base and enable renovate ([#79](https://github.com/MattKobayashi/container-vaping/issues/79)) ([4f75037](https://github.com/MattKobayashi/container-vaping/commit/4f750379ff84795dcd61eab4561d229f3313cd49))
+
 ## [1.5.4-patch6](https://github.com/MattKobayashi/container-vaping/compare/v1.5.4-patch5...v1.5.4-patch6) (2025-04-20)
 
 
