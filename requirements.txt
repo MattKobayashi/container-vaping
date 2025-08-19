@@ -7,7 +7,7 @@ python-daemon==3.1.2
 graphyte==1.7.1
 requests==2.32.5
 prometheus-client==0.22.1
-flask==3.1.1
+flask==3.1.2
 graphsrv==2.1.1
 setuptools==80.9.0
 werkzeug==3.1.3
