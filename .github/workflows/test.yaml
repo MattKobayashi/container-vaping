@@ -47,11 +47,6 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - "**.sh"
-      - "**.yaml"
-      - "Dockerfile"
-      - "requirements.txt"
   workflow_dispatch:
 permissions:
   contents: read
