@@ -3,11 +3,11 @@ FROM alpine:3.23.0@sha256:51183f2cfa6320055da30872f211093f9ff1d3cf06f39a0bdb2123
 # renovate: datasource=repology depName=alpine_3_23/fping
 ARG FPING_VERSION="5.3-r0"
 # renovate: datasource=repology depName=alpine_3_23/librrd
-ARG LIBRRD_VERSION="1.9.0-r4"
+ARG LIBRRD_VERSION="1.9.0-r5"
 # renovate: datasource=repology depName=alpine_3_23/zeromq
 ARG ZEROMQ_VERSION="4.3.5-r2"
 # renovate: datasource=repology depName=alpine_3_23/pipx
-ARG PIPX_VERSION="1.7.1-r0"
+ARG PIPX_VERSION="1.8.0-r0"
 
 RUN apk --no-cache add \
     fping="${FPING_VERSION}" \
