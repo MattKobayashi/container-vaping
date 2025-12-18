@@ -1,5 +1,5 @@
 confu==1.9.0
-docutils==0.22.3
+docutils==0.22.4
 munge[tomlkit,yaml]==1.4.0
 pid==3.0.4
 pluginmgr==1.2.1
