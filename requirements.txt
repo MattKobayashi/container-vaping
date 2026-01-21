@@ -9,7 +9,7 @@ requests==2.32.5
 prometheus-client==0.24.1
 flask==3.1.2
 graphsrv==2.1.1
-setuptools==80.9.0
+setuptools==80.10.1
 werkzeug==3.1.5
 whisper==1.1.10
 pyzmq==27.1.0
